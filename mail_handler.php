@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
 
 
     mail($to,$subject,$txt,$headers);
-    header('Location: test.php?mailsend');
+    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
     
     //echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
     // You can also use header('Location: thank_you.php'); to redirect to another page.
